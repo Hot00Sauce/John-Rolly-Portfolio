@@ -5,7 +5,7 @@ function Summary() {
     pt-75 sm:pt-95 md:pt-30 lg:pt-50 xl:pt-65
     px-8 justify-items-center
     ">
-      <h1 id="front end developer" style={{ wordSpacing: '2.5rem' }} className="text-[#1ABC9C] 
+      <h1 id="front end developer" style={{ wordSpacing: '2.8 rem' }} className="text-[#1ABC9C] 
         text-2xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl
         ">Front-end Developer</h1>
       <p id="specialized in frontend development seeking for a great opportunity to enhance my skills while helping you achieve your goals." style={{ fontFamily: 'Roboto, sans-serif' }} className=" 
