@@ -159,7 +159,7 @@ function Footer() {
                 </div>
             </div>
 
-            <footer id="footer" className="w-full text-center py-2 bg-black text-sm text-white mt-9">
+            <footer id="footer" className="w-full text-center py-2 bg-[#1A4D4F] text-sm text-[#1ABC9C] mt-9">
                 © {new Date().getFullYear()} John Rolly Cedillo. All rights reserved.
             </footer>
         </div>
