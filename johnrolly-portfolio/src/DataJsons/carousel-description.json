@@ -1,0 +1,18 @@
+[
+    {
+        "title": "HealthTech",
+        "description": "A healthcare appointment and monitoring system developed with PHP CodeIgniter. Patients can register with personal details and vital signs, upload a profile photo, book non-conflicting appointments, and rate doctors. Doctors can register with their specialization, view and update patient records, manage schedules, and view feedback. Admins can track doctor ratings, view patient history, and maintain a clean, error-free system."
+    },
+    {
+        "title": "VetConnect",
+        "description": "VetConnect is a web-based platform developed using Vanilla JavaScript, CSS, and HTML, designed to bridge the communication gap between pet owners and veterinarians. It features secure pet health record storage, an intuitive appointment scheduling system, real-time messaging for seamless communication, and a secure payment gateway for hassle-free transactions. With a user-friendly interface, VetConnect ensures smooth navigation, mobile responsiveness, and cross-browser compatibility, offering a consistent experience across Chrome, Firefox, Safari, and Edge. The project aims to enhance pet care accessibility and service efficiency for both users."
+    },
+    {
+        "title": "TravelSpot",
+        "description": "TravelSpotPH is a dynamic travel guide website designed to inspire and assist users in discovering the most popular and breathtaking tourist destinations across the Philippines. Whether you're planning a weekend getaway or a long vacation, the site provides valuable information, stunning visuals, and destination highlights to help users choose the perfect travel spot. Developed using Vanilla JavaScript for the front-end and PHP for the back-end, TravelSpotPH offers a smooth user experience with intuitive navigation, allowing visitors to explore various locations, learn about their attractions, and plan their trips more effectively."
+    },
+    {
+        "title": "Mr. Owl",
+        "description": "MrOwl is an interactive web-based game that features a charming animal character named Mr. Owl, designed to provide a fun and engaging experience for players of all ages. The game centers around simple yet entertaining mechanics that challenge the player's reflexes, timing, or problem-solving skills, depending on the scenario. With a playful design and smooth user interface, MrOwl captures attention through its lively animations and lighthearted theme. This project showcases creativity in front-end development and game logic implementation, offering a delightful digital experience that blends entertainment with interactive storytelling."
+    }
+]
