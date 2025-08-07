@@ -37,14 +37,14 @@ function Body() {
 
       <div className="grid md:grid-cols-2 lg:w-250 xl:w-310 gap-5 pt-3 md:pt-6 lg:pt-8 xl:pt-9 2xl:pt-12 justify-items-center">
         {/* VANILLA */}
-        <div className="fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 pb-5">
+        <div className="justify-items-center fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 pb-5">
           <h1
             id="vanilla"
             className="justify-center block text-center pt-8 text-lg sm:text-xl md:text-[23px] xl:text-[30px] 2xl:text-3xl text-[#1A4D4F]"
           >
             VANILLA FRONT-END
           </h1>
-          <div className="justify-items-center grid grid-cols-3 gap-1 w-90 md:w-80 lg:w-120">
+          <div className="justify-center grid grid-cols-3 gap-1 w-90 md:w-80 lg:w-120">
             <CircularProgressBar percentage={80} skill="HTML" />
             <CircularProgressBar percentage={75} skill="CSS" />
             <CircularProgressBar percentage={65} skill="JavaScript" />
@@ -52,7 +52,7 @@ function Body() {
         </div>
 
         {/* FRAMEWORKS */}
-        <div id="frameworks" className="fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 md:h-65 lg:h-auto pb-5">
+        <div id="frameworks" className="justify-items-center fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 md:h-65 lg:h-auto pb-5">
           <h1 className="justify-center block text-center pt-8 text-lg sm:text-xl md:text-[23px] xl:text-[30px] 2xl:text-3xl text-[#1A4D4F]">
             FRAMEWORKS
           </h1>
