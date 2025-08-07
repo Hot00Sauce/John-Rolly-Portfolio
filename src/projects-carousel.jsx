@@ -112,7 +112,7 @@ function ProjectCarousel() {
                         </button>
                     </div>
 
-                    <div className="flex justify-center space-x-3 h-20 py-5 absolute left-1/2 -translate-x-1/2 bottom-[-500]">
+                    <div className="flex justify-center space-x-3 h-20 py-5 absolute left-1/2 -translate-x-1/2">
                         {projImages.map((_, index) => (
                             <button
                                 key={index}
