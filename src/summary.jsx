@@ -7,7 +7,7 @@ function Summary() {
     ">
       <h1 id="front end developer" style={{ wordSpacing: '2.8rem' }} className="text-[#1ABC9C] 
         text-2xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl
-        ">Front-end Developer</h1>
+        ">Web Developer</h1>
       <p id="specialized in frontend development seeking for a great opportunity to enhance my skills while helping you achieve your goals." style={{ fontFamily: 'Roboto, sans-serif' }} className=" 
       text-lg sm:text-2xl md:text-lg lg:text-2xl 2xl:text-3xl
      text-black 
