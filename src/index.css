@@ -31,12 +31,12 @@ button {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #e5e7eb;
+    background: linear-gradient(to bottom right, #1f2937, #111827);
   }
 
   a:hover {
-    color: black;
+    color: #1ABC9C;
   }
 }
 

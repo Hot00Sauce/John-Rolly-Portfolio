@@ -3,7 +3,7 @@ import SocialMediaIcon from "./assets/social-media-icon";
 function SideBoxContent() {
   return (
     <div id="porfolio" className="side-box-content justify-items-center 
-    pt-15 sm:pt-23 md:pt-30 lg:pt-55 xl:pt-70
+    pt-7 sm:pt-23 md:pt-30 lg:pt-55 xl:pt-70
     ">
       <div className="heading-and-subheading justify-center items-center">
         <h1 id="John Rolly Cedillo" className="justify-center flex 

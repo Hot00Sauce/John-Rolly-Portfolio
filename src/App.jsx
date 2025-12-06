@@ -1,6 +1,5 @@
 import './App.css'
 import Navigation from './navigation'
-import SearchBar from './search-bar'
 import SideBoxContent from './side-box-content'
 import Summary from './summary'
 import Body from './body'
@@ -27,8 +26,6 @@ function App() {
         md:rounded-br-4xl
         md:w-90 lg:w-lg xl:w-150
         ">
-
-        <SearchBar />
         <SideBoxContent />
       </div>
       <Navigation />
