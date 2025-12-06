@@ -3,11 +3,20 @@
 :root {
   font-family: 'Montserrat', 'Roboto', sans-serif;
   line-height: 1.5;
+  color: #e5e7eb;
+  background: linear-gradient(to bottom right, #1f2937, #111827);
+  min-height: 100vh;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  background: linear-gradient(to bottom right, #1f2937, #111827);
+  min-height: 100vh;
 }
 
 a {
@@ -21,23 +30,12 @@ html {
 }
 
 a:hover {
-  color: black;
+  color: #1ABC9C;
 }
 
 button {
   font-family: inherit;
   cursor: pointer;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #e5e7eb;
-    background: linear-gradient(to bottom right, #1f2937, #111827);
-  }
-
-  a:hover {
-    color: #1ABC9C;
-  }
 }
 
 @keyframes fade-in {
