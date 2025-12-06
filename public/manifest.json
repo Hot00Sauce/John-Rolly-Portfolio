@@ -1,0 +1,17 @@
+{
+    "name": "John Rolly Cedillo Portfolio",
+    "short_name": "John Rolly",
+    "description": "Web Developer Portfolio",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1f2937",
+    "theme_color": "#1ABC9C",
+    "icons": [
+        {
+            "src": "/logo-favicon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
