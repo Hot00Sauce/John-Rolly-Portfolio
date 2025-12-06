@@ -14,18 +14,18 @@ function App() {
         absolute
         top-
         w-screen
-        h-[320px]
+        h-80
         sm:h-[400px]
         md:h-[500px]
         lg:h-[662px]
         xl:h-[780px]
         items-top justify-center
-        bg-gradient-to-b from-[#1A4D4F] to-[#1ABC9C]
+        bg-linear-to-b from-[#1A4D4F] to-[#1ABC9C]
         pt-14
 
         md:pt-10
         md:rounded-br-4xl
-        md:w-90 lg:w-128 xl:w-150
+        md:w-90 lg:w-lg xl:w-150
         ">
 
         <SearchBar />
