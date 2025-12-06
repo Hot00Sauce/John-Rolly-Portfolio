@@ -121,7 +121,7 @@ function Footer() {
                     </button>
                 </form>
                 {/* this is the social media icon section */}
-                <div id="social media icon" className="flex w-25 justify-center items-center gap-2 justify-items-center
+                <div id="social media icon" className="flex w-25 gap-2 justify-center mx-auto
                                                         pt-4 sm:pt-3 md:pt-4 lg:pt-5">
                     <a href="https://www.instagram.com/jo_0.0_hn/">
                         <svg className="duration-300 text-gray-400
