@@ -1,4 +1,33 @@
+import { useState, useEffect } from 'react';
+
 function Navigation() {
+  const [activeSection, setActiveSection] = useState('summary');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['summary', 'skills', 'projects', 'contact'];
+      const scrollPosition = window.scrollY + 100;
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetHeight = element.offsetHeight;
+
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <nav className="
     sticky top-0 z-50
@@ -27,65 +56,89 @@ function Navigation() {
           >
             <li>
               <a
-                className="
-        text-gray-300
-        hover:text-[#1ABC9C]
+                className={`
+        ${activeSection === 'summary' ? 'bg-[#1ABC9C] !text-gray-900' : 'text-gray-300 hover:text-[#1ABC9C]'}
+        focus:text-[#1ABC9C]
+        focus:bg-gray-700/50
+        active:bg-[#1ABC9C]
+        active:!text-gray-900
         px-1.5 sm:px-2 md:px-3 lg:px-4 xl:px-5 py-1 sm:py-1.5 lg:py-2
         rounded-full
         transition-all duration-300
         font-medium
         hover:bg-gray-700/50
         whitespace-nowrap
-      "
+        outline-none
+      `}
                 href="#summary"
+                onClick={() => setActiveSection('summary')}
               >
                 Summary
               </a>
             </li>
             <li>
-              <a className="
-          text-gray-300
-          hover:text-[#1ABC9C]
+              <a className={`
+          ${activeSection === 'skills' ? 'bg-[#1ABC9C] !text-gray-900' : 'text-gray-300 hover:text-[#1ABC9C]'}
+          focus:text-[#1ABC9C]
+          focus:bg-gray-700/50
+          active:bg-[#1ABC9C]
+          active:!text-gray-900
           px-1.5 sm:px-2 md:px-3 lg:px-4 xl:px-5 py-1 sm:py-1.5 lg:py-2
           rounded-full
           transition-all duration-300
           font-medium
           hover:bg-gray-700/50
-          whitespace-nowrap"
-                href="#skills">
+          whitespace-nowrap
+          outline-none
+        `}
+                href="#skills"
+                onClick={() => setActiveSection('skills')}>
                 Skills
               </a>
             </li>
             <li>
-              <a className="
-          text-gray-300
-          hover:text-[#1ABC9C]
+              <a className={`
+          ${activeSection === 'projects' ? 'bg-[#1ABC9C] !text-gray-900' : 'text-gray-300 hover:text-[#1ABC9C]'}
+          focus:text-[#1ABC9C]
+          focus:bg-gray-700/50
+          active:bg-[#1ABC9C]
+          active:!text-gray-900
           px-1.5 sm:px-2 md:px-3 lg:px-4 xl:px-5 py-1 sm:py-1.5 lg:py-2
           rounded-full
           transition-all duration-300
           font-medium
           hover:bg-gray-700/50
-          whitespace-nowrap"
-                href="#projects">
+          whitespace-nowrap
+          outline-none
+        `}
+                href="#projects"
+                onClick={() => setActiveSection('projects')}>
                 Projects
               </a>
             </li>
             <li>
-              <a className="
-          bg-gray-800
+              <a className={`
+          ${activeSection === 'contact' ? 'bg-[#16A085]' : 'bg-gray-800'}
           text-white
           hover:bg-[#1ABC9C]
           hover:!text-gray-900
+          focus:bg-[#1ABC9C]
+          focus:!text-gray-900
+          active:bg-[#16A085]
+          active:scale-95
           px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8 py-1 sm:py-1.5 lg:py-2
           rounded-full
           transition-all duration-300
           font-semibold
           hover:scale-105
-          whitespace-nowrap"
+          whitespace-nowrap
+          outline-none
+        `}
                 style={{
                   boxShadow: '0 0 20px rgba(26, 188, 156, 0.5), inset 0 0 20px rgba(26, 188, 156, 0.1)'
                 }}
-                href="#contact">
+                href="#contact"
+                onClick={() => setActiveSection('contact')}>
                 Contact Me
               </a>
             </li>
