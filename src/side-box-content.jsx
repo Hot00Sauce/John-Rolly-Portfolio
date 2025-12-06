@@ -4,6 +4,7 @@ function SideBoxContent() {
   return (
     <div id="porfolio" className="side-box-content justify-items-center 
     pt-7 sm:pt-23 md:pt-30 lg:pt-55 xl:pt-70
+    relative
     ">
       <div className="heading-and-subheading justify-center items-center">
         <h1 id="John Rolly Cedillo" className="justify-center flex 

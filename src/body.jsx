@@ -27,7 +27,7 @@ function Body() {
   }, []);
 
   return (
-    <div className="body w-screen pt-25 md:pt-60 lg:pt-70 xl:pt-90 2xl:pt-95 justify-items-center pb-15">
+    <div className="body w-screen pt-20 md:pt-40 lg:pt-45 xl:pt-90 2xl:pt-95 justify-items-center pb-15">
       <h1
         id="skills"
         className="justify-center block text-center text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] text-[#1ABC9C] font-bold"

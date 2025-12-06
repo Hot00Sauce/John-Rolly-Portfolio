@@ -69,9 +69,9 @@ function ProjectCarousel() {
                     onTouchEnd={startAutoSlide}
                     className="w-full max-w-5xl"
                 >
-                    <div className="relative w-full mx-auto bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 shadow-2xl h-[700px] sm:h-[750px] md:h-[800px] lg:h-[850px] flex flex-col">
+                    <div className="relative w-full mx-auto bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 shadow-2xl h-[550px] sm:h-[600px] md:h-[755px] lg:h-[750px] xl:h-[800px] flex flex-col">
                         {/* Image */}
-                        <div className="h-64 sm:h-80 md:h-96 lg:h-[450px] overflow-hidden rounded-2xl flex-shrink-0">
+                        <div className="h-64 sm:h-80 md:h-96 lg:h-[450px] xl:h-[500px] overflow-hidden rounded-2xl flex-shrink-0">
                             <img
                                 key={currentIndex}
                                 src={projImages[currentIndex]}
@@ -82,7 +82,7 @@ function ProjectCarousel() {
 
                         <button
                             onClick={handlePrevious}
-                            className="absolute top-1/2 left-2 -translate-y-1/2 
+                            className="absolute top-[60%] sm:top-[65%] md:top-[60%] lg:top-[72%] left-2 -translate-y-1/2 
                                 bg-gray-900/80 hover:bg-gray-900
                                 transition-all duration-300
                                 p-3 rounded-full
@@ -96,7 +96,7 @@ function ProjectCarousel() {
 
                         <button
                             onClick={handleNext}
-                            className="absolute top-1/2 right-2 -translate-y-1/2 
+                            className="absolute top-[60%] sm:top-[65%] md:top-[60%] lg:top-[72%] right-2 -translate-y-1/2 
                                 bg-gray-900/80 hover:bg-gray-900
                                 transition-all duration-300
                                 p-3 rounded-full
@@ -124,11 +124,11 @@ function ProjectCarousel() {
                         </div>
 
                         {/* Description */}
-                        <div id="description" className="text-center transition-all duration-500 mt-6 px-4 flex-1 flex flex-col justify-start">
+                        <div id="description" className="text-center transition-all duration-500 mt-6 px-4 flex-1 flex flex-col justify-start overflow-hidden">
                             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#1ABC9C] mb-4">
                                 {projectDescriptions[currentIndex].title}
                             </h2>
-                            <p className="text-gray-300 text-sm md:text-base lg:text-lg leading-relaxed max-w-3xl mx-auto line-clamp-6">
+                            <p className="text-gray-300 text-sm md:text-base lg:text-lg leading-relaxed max-w-3xl mx-auto overflow-y-auto">
                                 {projectDescriptions[currentIndex].description}
                             </p>
                         </div>

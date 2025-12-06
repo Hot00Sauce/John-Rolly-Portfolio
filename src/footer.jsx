@@ -14,7 +14,7 @@ function Footer() {
         e.target.reset();
     };
     return (
-        <div href="#contact" id="contact" className="h-145 mt-10 md:h-160 xl:h-185
+        <div href="#contact" id="contact" className="h-145 mt-0 md:h-160 xl:h-185
          bg-gradient-to-b from-gray-900 to-gray-950 justify-center items-center block">
             {/* footer navigation */}
             <div className="

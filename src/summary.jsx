@@ -2,7 +2,7 @@ function Summary() {
   return (
     <div id="summary" className="summary 
     md:pl-100 lg:pl-140 xl:pl-155
-    pt-75 sm:pt-95 md:pt-30 lg:pt-50 xl:pt-65
+    pt-75 sm:pt-95 md:pt-10 lg:pt-35 xl:pt-45
     px-8 flex justify-center items-center
     ">
       {/* Main card container */}
