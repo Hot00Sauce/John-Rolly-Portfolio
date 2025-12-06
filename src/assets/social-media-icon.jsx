@@ -1,6 +1,6 @@
 function SocialMediaIcon() {
     return (
-        <div id="social media icon" className="grid grid-cols-2 w-25 justify-center items-center gap-2 justify-items-center
+        <div id="social media icon" className="grid grid-cols-2 w-25 gap-2 justify-items-center mx-auto
     pt-2 sm:pt-3 md:pt-4 lg:pt-5
     ">
             <a id="instagram" href="https://www.instagram.com/jo_0.0_hn/">
