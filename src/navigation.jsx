@@ -37,7 +37,7 @@ function Navigation() {
     ">
       <div className="
         flex justify-center md:justify-end
-        md:pr-8 lg:pr-12 xl:pr-1.5
+        md:pr-8 lg:pr-12 xl:pr-51
       ">
         <div className="
         max-w-[100%] sm:max-w-[85%] md:max-w-xl lg:max-w-3xl xl:max-w-4xl
