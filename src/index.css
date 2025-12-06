@@ -13,10 +13,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html,
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 body {
   background: linear-gradient(to bottom right, #1f2937, #111827);
   min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
 }
 
 a {

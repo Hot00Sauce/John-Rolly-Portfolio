@@ -4,6 +4,7 @@ function Summary() {
     md:pl-100 lg:pl-140 xl:pl-155
     pt-75 sm:pt-95 md:pt-10 lg:pt-35 xl:pt-45
     px-8 flex justify-center items-center
+    relative
     ">
       {/* Main card container */}
       <div className="relative max-w-xl w-full">
