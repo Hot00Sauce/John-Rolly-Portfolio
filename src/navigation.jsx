@@ -5,7 +5,7 @@ function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['summary', 'skills', 'projects', 'contact'];
+      const sections = ['summary', 'skills', 'experience', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -22,10 +22,34 @@ function Navigation() {
       }
     };
 
+    // Smooth scroll handler for navigation links
+    const handleNavClick = (e) => {
+      const href = e.target.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        const targetId = href.substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+          setActiveSection(targetId);
+        }
+      }
+    };
+
     window.addEventListener('scroll', handleScroll);
     handleScroll();
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    // Add click listeners to all navigation links
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    navLinks.forEach(link => link.addEventListener('click', handleNavClick));
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      navLinks.forEach(link => link.removeEventListener('click', handleNavClick));
+    };
   }, []);
 
   return (
@@ -37,20 +61,20 @@ function Navigation() {
     ">
       <div className="
         flex justify-center md:justify-end
-        md:pr-8 lg:pr-12 xl:pr-32
+        md:pr-7 lg:pr-15 xl:pr-3
       ">
         <div className="
-        max-w-[100%] sm:max-w-[85%] md:max-w-xl lg:max-w-3xl xl:max-w-4xl
+        max-w-[100%] sm:max-w-[85%] md:max-w-md lg:max-w-xl xl:max-w-2xl
         backdrop-blur-lg bg-gradient-to-b from-gray-900/60 to-gray-900/40
         border border-white/10
         shadow-xl
         rounded-full
-        px-3 sm:px-4 md:px-5 lg:px-6 xl:px-8 py-1.5 md:py-2.5 lg:py-3 xl:py-3.5
+        px-3 sm:px-4 md:px-3 lg:px-5 xl:px-6 py-1.5 md:py-1.5 lg:py-2.5 xl:py-3
       ">
           <ul className="
         flex justify-center items-center flex-nowrap
-        gap-1.5 sm:gap-2 md:gap-3 lg:gap-6 xl:gap-8
-        text-[10px] sm:text-xs md:text-xs lg:text-base xl:text-lg
+        gap-1.5 sm:gap-2 md:gap-1.5 lg:gap-3 xl:gap-4
+        text-[10px] sm:text-xs md:text-[11px] lg:text-sm xl:text-base
         font-montserrat
         "
           >
@@ -62,7 +86,7 @@ function Navigation() {
         focus:bg-gray-700/50
         active:bg-[#1ABC9C]
         active:!text-gray-900
-        px-1.5 sm:px-2 md:px-3 lg:px-4 xl:px-5 py-1 sm:py-1.5 lg:py-2
+        px-1.5 sm:px-2 md:px-2 lg:px-3 xl:px-4 py-1 sm:py-1.5 md:py-1 lg:py-1.5 xl:py-2
         rounded-full
         transition-all duration-300
         font-medium
@@ -83,7 +107,7 @@ function Navigation() {
           focus:bg-gray-700/50
           active:bg-[#1ABC9C]
           active:!text-gray-900
-          px-1.5 sm:px-2 md:px-3 lg:px-4 xl:px-5 py-1 sm:py-1.5 lg:py-2
+          px-1.5 sm:px-2 md:px-2 lg:px-3 xl:px-4 py-1 sm:py-1.5 md:py-1 lg:py-1.5 xl:py-2
           rounded-full
           transition-all duration-300
           font-medium
@@ -97,13 +121,35 @@ function Navigation() {
               </a>
             </li>
             <li>
+              <a
+                className={`
+        ${activeSection === 'experience' ? 'bg-[#1ABC9C] !text-gray-900' : 'text-gray-300 hover:text-[#1ABC9C]'}
+        focus:text-[#1ABC9C]
+        focus:bg-gray-700/50
+        active:bg-[#1ABC9C]
+        active:!text-gray-900
+        px-1.5 sm:px-2 md:px-2 lg:px-3 xl:px-4 py-1 sm:py-1.5 md:py-1 lg:py-1.5 xl:py-2
+        rounded-full
+        transition-all duration-300
+        font-medium
+        hover:bg-gray-700/50
+        whitespace-nowrap
+        outline-none
+      `}
+                href="#experience"
+                onClick={() => setActiveSection('experience')}
+              >
+                Experience
+              </a>
+            </li>
+            <li>
               <a className={`
           ${activeSection === 'projects' ? 'bg-[#1ABC9C] !text-gray-900' : 'text-gray-300 hover:text-[#1ABC9C]'}
           focus:text-[#1ABC9C]
           focus:bg-gray-700/50
           active:bg-[#1ABC9C]
           active:!text-gray-900
-          px-1.5 sm:px-2 md:px-3 lg:px-4 xl:px-5 py-1 sm:py-1.5 lg:py-2
+          px-1.5 sm:px-2 md:px-2 lg:px-3 xl:px-4 py-1 sm:py-1.5 md:py-1 lg:py-1.5 xl:py-2
           rounded-full
           transition-all duration-300
           font-medium
@@ -126,7 +172,7 @@ function Navigation() {
           focus:!text-gray-900
           active:bg-[#16A085]
           active:scale-95
-          px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8 py-1 sm:py-1.5 lg:py-2
+          px-2 sm:px-3 md:px-2.5 lg:px-4 xl:px-5 py-1 sm:py-1.5 md:py-1 lg:py-1.5 xl:py-2
           rounded-full
           transition-all duration-300
           font-semibold

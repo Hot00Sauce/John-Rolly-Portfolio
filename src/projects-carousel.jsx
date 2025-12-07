@@ -50,7 +50,7 @@ function ProjectCarousel() {
     return (
         <div
             id="carousel"
-            className="pb-25 projects-carousel mt-15 px-5 lg:px-8 2xl:px-10 pt-15 lg:pt-20 xl:pt-25"
+            className="projects-carousel mt-5 px-5 lg:px-8 2xl:px-10 pt-15 lg:pt-20 xl:pt-25"
         >
             <h1
                 id="projects"
@@ -61,7 +61,7 @@ function ProjectCarousel() {
                 PROJECTS
             </h1>
 
-            <div className="flex justify-center lg:pt-8 xl:pt-10 2xl:pt-12">
+            <div className="flex md-5 md:mt-5 xl:-mt-15 justify-center lg:pt-8 xl:pt-15 2xl:pt-12">
                 <div
                     onMouseEnter={stopAutoSlide}
                     onMouseLeave={startAutoSlide}
@@ -69,7 +69,7 @@ function ProjectCarousel() {
                     onTouchEnd={startAutoSlide}
                     className="w-full max-w-5xl"
                 >
-                    <div className="relative w-full mx-auto bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 shadow-2xl h-[550px] sm:h-[600px] md:h-[755px] lg:h-[750px] xl:h-[800px] flex flex-col">
+                    <div className="relative w-full mx-auto bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 shadow-2xl h-[650px] sm:h-[620px] md:h-[770px] lg:h-[800px] xl:h-[820px] flex flex-col">
                         {/* Image */}
                         <div className="h-64 sm:h-80 md:h-96 lg:h-[450px] xl:h-[500px] overflow-hidden rounded-2xl flex-shrink-0">
                             <img
