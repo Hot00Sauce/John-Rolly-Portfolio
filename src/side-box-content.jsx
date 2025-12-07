@@ -3,7 +3,7 @@ import SocialMediaIcon from "./assets/social-media-icon";
 function SideBoxContent() {
   return (
     <div id="porfolio" className="side-box-content justify-items-center 
-    pt-7 sm:pt-23 md:pt-30 lg:pt-55 xl:pt-70
+    pt-13 sm:pt-23 md:pt-30 lg:pt-55 xl:pt-70
     relative
     ">
       <div className="heading-and-subheading justify-center items-center">
