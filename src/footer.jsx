@@ -105,8 +105,8 @@ function Footer() {
                     </a>
 
                     {/* Download Resume Icon */}
-                    <a href="/src/assets/John Rolly N. Cedillo Resume.pdf" download="John_Rolly_Cedillo_Resume.pdf" title="Download Resume">
-                        <svg className="text-[#1ABC9C] hover:text-white hover:scale-110 duration-300 cursor-pointer drop-shadow-lg" width="54" height="54" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <a href="/John Rolly N. Cedillo Resume.pdf" download="John_Rolly_Cedillo_Resume.pdf" title="Download Resume">
+                        <svg className="text-[#1ABC9C] hover:text-white hover:scale-110 duration-300 cursor-pointer drop-shadow-lg" width="44" height="44" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 13.59L15.88 10.71L17.29 12.12L12 17.41L6.71 12.12L8.12 10.71L11 13.59V7H13V13.59Z" fill="currentColor" />
                         </svg>
                     </a>
