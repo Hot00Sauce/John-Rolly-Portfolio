@@ -30,7 +30,7 @@ function Navigation() {
         const targetId = href.substring(1);
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
-          targetElement.scrollIntoView({ 
+          targetElement.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
           });
@@ -61,7 +61,7 @@ function Navigation() {
     ">
       <div className="
         flex justify-center md:justify-end
-        md:pr-7 lg:pr-15 xl:pr-3
+        md:pr-7 lg:pr-15 xl:pr-25
       ">
         <div className="
         max-w-[100%] sm:max-w-[85%] md:max-w-md lg:max-w-xl xl:max-w-2xl
