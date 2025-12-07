@@ -54,27 +54,27 @@ function Navigation() {
 
   return (
     <nav className="
-    sticky top-0 z-50
+    fixed lg:sticky bottom-0 lg:top-0 z-50
     w-full
-    pb-2.5
-    pt-3
+    pb-3 lg:pb-2.5
+    pt-3 lg:pt-3
     ">
       <div className="
-        flex justify-center md:justify-end
-        md:pr-7 lg:pr-15 xl:pr-34
+        flex justify-center lg:justify-end
+        lg:pr-15 xl:pr-34
       ">
         <div className="
-        max-w-[100%] sm:max-w-[85%] md:max-w-md lg:max-w-xl xl:max-w-2xl
+        max-w-[100%] sm:max-w-[85%] md:max-w-lg lg:max-w-xl xl:max-w-2xl
         backdrop-blur-lg bg-gradient-to-b from-gray-900/60 to-gray-900/40
         border border-white/10
         shadow-xl
         rounded-full
-        px-3 sm:px-4 md:px-3 lg:px-5 xl:px-6 py-1.5 md:py-1.5 lg:py-2.5 xl:py-3
+        px-3 sm:px-4 md:px-4 lg:px-5 xl:px-6 py-1.5 md:py-2 lg:py-2.5 xl:py-3
       ">
           <ul className="
         flex justify-center items-center flex-nowrap
-        gap-1.5 sm:gap-2 md:gap-1.5 lg:gap-3 xl:gap-4
-        text-[10px] sm:text-xs md:text-[11px] lg:text-sm xl:text-base
+        gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-3 xl:gap-4
+        text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-base
         font-montserrat
         "
           >
@@ -128,7 +128,7 @@ function Navigation() {
         focus:bg-gray-700/50
         active:bg-[#1ABC9C]
         active:!text-gray-900
-        px-1.5 sm:px-2 md:px-2 lg:px-3 xl:px-4 py-1 sm:py-1.5 md:py-1 lg:py-1.5 xl:py-2
+        px-1.5 sm:px-2 md:px-3 lg:px-3 xl:px-4 py-1 sm:py-1.5 md:py-1.5 lg:py-1.5 xl:py-2
         rounded-full
         transition-all duration-300
         font-medium
@@ -149,7 +149,7 @@ function Navigation() {
           focus:bg-gray-700/50
           active:bg-[#1ABC9C]
           active:!text-gray-900
-          px-1.5 sm:px-2 md:px-2 lg:px-3 xl:px-4 py-1 sm:py-1.5 md:py-1 lg:py-1.5 xl:py-2
+          px-1.5 sm:px-2 md:px-3 lg:px-3 xl:px-4 py-1 sm:py-1.5 md:py-1.5 lg:py-1.5 xl:py-2
           rounded-full
           transition-all duration-300
           font-medium
@@ -172,7 +172,7 @@ function Navigation() {
           focus:!text-gray-900
           active:bg-[#16A085]
           active:scale-95
-          px-2 sm:px-3 md:px-2.5 lg:px-4 xl:px-5 py-1 sm:py-1.5 md:py-1 lg:py-1.5 xl:py-2
+          px-2 sm:px-3 md:px-3.5 lg:px-4 xl:px-5 py-1 sm:py-1.5 md:py-1.5 lg:py-1.5 xl:py-2
           rounded-full
           transition-all duration-300
           font-semibold
