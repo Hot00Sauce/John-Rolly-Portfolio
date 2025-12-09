@@ -46,9 +46,9 @@ function Body() {
             VANILLA FRONT-END
           </h1>
           <div className="justify-center grid grid-cols-3 gap-1 w-90 md:w-80 lg:w-120">
-            <CircularProgressBar percentage={80} skill="HTML" />
-            <CircularProgressBar percentage={75} skill="CSS" />
-            <CircularProgressBar percentage={65} skill="JavaScript" />
+            <CircularProgressBar percentage={85} skill="HTML" />
+            <CircularProgressBar percentage={85} skill="CSS" />
+            <CircularProgressBar percentage={80} skill="JavaScript" />
           </div>
         </div>
 
@@ -58,18 +58,18 @@ function Body() {
             FRAMEWORKS
           </h1>
           <div className="justify-items-center grid grid-cols-2 gap-1 w-60 md:w-75 lg:w-90 xl:w-100 2xl:w-120">
-            <CircularProgressBar percentage={70} skill="React" />
-            <CircularProgressBar percentage={70} skill="Tailwind" />
+            <CircularProgressBar percentage={80} skill="React" />
+            <CircularProgressBar percentage={80} skill="Tailwind" />
           </div>
         </div>
 
-        {/* PREPROCESSOR */}
-        <div id="preprocessor" className="fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 md:h-70 xl:h-75 2xl:h-78 pb-5">
+        {/* WEBSITE BUILDER */}
+        <div id="website builder" className="fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 md:h-70 xl:h-75 2xl:h-78 pb-5">
           <h1 className="justify-center block text-center pt-8 text-lg sm:text-xl md:text-[23px] xl:text-[30px] 2xl:text-3xl text-gray-400">
-            PREPROCESSOR
+            WEBSITE BUILDER
           </h1>
           <div className="justify-items-center grid grid-cols-1 gap-1">
-            <CircularProgressBar percentage={60} skill="Sass" />
+            <CircularProgressBar percentage={85} skill="WordPress" />
           </div>
         </div>
 
@@ -79,11 +79,21 @@ function Body() {
             BACK-END
           </h1>
           <div className="justify-items-center grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 xl:w-140 2xl:grid-cols-3 gap-1 w-90 md:w-80 lg:w-120 2xl:w-150">
-            <CircularProgressBar percentage={60} skill="Python" />
-            <CircularProgressBar percentage={65} skill="PHP" />
-            <CircularProgressBar percentage={50} skill="NodeJs" />
-            <CircularProgressBar percentage={75} skill="PostgreSQL" />
+            <CircularProgressBar percentage={80} skill="Python" />
+            <CircularProgressBar percentage={80} skill="PHP" />
+            <CircularProgressBar percentage={75} skill="NodeJs" />
+            <CircularProgressBar percentage={80} skill="PostgreSQL" />
             <CircularProgressBar percentage={80} skill="MySQL" />
+          </div>
+        </div>
+
+        {/* DATA ANALYTICS */}
+        <div id="data analytics" className="fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 md:h-60 xl:h-60 2xl:h-78 pb-5">
+          <h1 className="justify-center block text-center text-lg sm:text-xl md:text-[23px] xl:text-[30px] 2xl:text-3xl text-gray-400">
+            DATA ANALYTICS
+          </h1>
+          <div className="justify-items-center grid grid-cols-1 gap-1">
+            <CircularProgressBar percentage={80} skill="Power BI" />
           </div>
         </div>
       </div>

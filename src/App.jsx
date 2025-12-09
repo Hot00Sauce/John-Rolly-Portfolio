@@ -31,8 +31,8 @@ function App() {
           {/* Decorative background elements */}
           <div className="absolute inset-0 opacity-40">
             {/* Geometric pattern */}
-            <div className="absolute top-5 left-5 sm:top-10 sm:left-10 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 border-2 sm:border-2 md:border-3 border-white/60 rounded-full"></div>
-            <div className="absolute top-10 right-10 sm:top-20 sm:right-20 w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 border-2 sm:border-2 md:border-3 border-white/50 rounded-lg rotate-45"></div>
+            <div className="absolute bottom-35 left-5 sm:top-10 sm:left-10 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 border-2 sm:border-2 md:border-3 border-white/60 rounded-full"></div>
+            <div className="absolute bottom-25 right-10 sm:top-20 sm:right-20 w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 border-2 sm:border-2 md:border-3 border-white/50 rounded-lg rotate-45"></div>
             <div className="absolute bottom-10 left-1/4 sm:bottom-20 w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 border-2 sm:border-2 md:border-3 border-white/40 rounded-full"></div>
 
             {/* Gradient orbs */}

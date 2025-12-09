@@ -74,7 +74,7 @@ function Navigation() {
           <ul className="
         flex justify-center items-center flex-nowrap
         gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-3 xl:gap-4
-        text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-base
+        text-[11px] sm:text-sm md:text-sm lg:text-sm xl:text-base
         font-montserrat
         "
           >

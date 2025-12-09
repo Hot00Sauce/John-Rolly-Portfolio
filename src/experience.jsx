@@ -5,8 +5,70 @@ function Experience() {
                 EXPERIENCE
             </h1>
 
-            <div className="max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
+            <div className="max-w-7xl mx-auto relative">
+                {/* Horizontal Timeline for Mobile - Visible only on mobile */}
+                <div className="lg:hidden flex justify-center items-center mb-6">
+                    <div className="flex items-center gap-3">
+                        {/* Start year */}
+                        <span className="text-[#1ABC9C] font-bold text-lg">1</span>
+
+                        {/* Horizontal line with dots */}
+                        <div className="relative w-32 md:w-64 h-0.5 bg-gradient-to-r from-[#1ABC9C] via-[#16A085] to-[#1ABC9C]">
+                            <div className="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-[#1ABC9C] rounded-full animate-pulse shadow-lg shadow-[#1ABC9C]/50"></div>
+                            <div className="absolute left-1/4 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-[#16A085] rounded-full"></div>
+                            <div className="absolute left-1/2 top-1/2 -translate-y-1/2 w-2 h-2 bg-[#1ABC9C] rounded-full"></div>
+                            <div className="absolute left-3/4 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-[#16A085] rounded-full"></div>
+                            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-[#1ABC9C] rounded-full animate-pulse shadow-lg shadow-[#1ABC9C]/50"></div>
+                        </div>
+
+                        {/* End year */}
+                        <span className="text-[#1ABC9C] font-bold text-lg">5</span>
+
+                        {/* Years label */}
+                        <span className="text-gray-400 text-xs font-medium ml-2">YEARS</span>
+                    </div>
+                </div>
+
+                {/* Vertical Timeline - Hidden on mobile, visible on larger screens */}
+                <div className="hidden lg:block absolute left-0 top-0 bottom-0 w-16">
+                    <div className="sticky top-32 flex flex-col items-center h-full">
+                        {/* Year indicator */}
+                        <div className="relative flex flex-col items-center">
+                            {/* Top year */}
+                            <div className="mb-2">
+                                <span className="text-[#1ABC9C] font-bold text-xl tracking-wider" style={{ writingMode: 'vertical-rl', textOrientation: 'upright' }}>
+                                    5
+                                </span>
+                            </div>
+
+                            {/* Vertical line with gradient */}
+                            <div className="relative h-64 w-0.5 bg-gradient-to-b from-[#1ABC9C] via-[#16A085] to-[#1ABC9C] my-2">
+                                {/* Animated pulse dots */}
+                                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#1ABC9C] rounded-full animate-pulse shadow-lg shadow-[#1ABC9C]/50"></div>
+                                <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-[#16A085] rounded-full"></div>
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#1ABC9C] rounded-full"></div>
+                                <div className="absolute top-3/4 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-[#16A085] rounded-full"></div>
+                                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#1ABC9C] rounded-full animate-pulse shadow-lg shadow-[#1ABC9C]/50"></div>
+                            </div>
+
+                            {/* Bottom year */}
+                            <div className="mt-2">
+                                <span className="text-[#1ABC9C] font-bold text-xl tracking-wider" style={{ writingMode: 'vertical-rl', textOrientation: 'upright' }}>
+                                    1
+                                </span>
+                            </div>
+
+                            {/* Years label */}
+                            <div className="mt-4">
+                                <span className="text-gray-400 text-xs font-medium tracking-wide" style={{ writingMode: 'vertical-rl' }}>
+                                    YEARS
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 md:gap-6 lg:gap-8 lg:ml-20">
                     {/* Metroseek */}
                     <div className="group bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 shadow-xl sm:shadow-2xl hover:shadow-[#1ABC9C]/20 transition-all duration-300 hover:-translate-y-1 sm:hover:-translate-y-2 border border-gray-700/50 hover:border-[#1ABC9C]/50">
                         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3 sm:mb-4">

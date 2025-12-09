@@ -71,7 +71,7 @@ function ProjectCarousel() {
                 >
                     <div className="relative w-full mx-auto bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 shadow-2xl h-[650px] sm:h-[620px] md:h-[770px] lg:h-[800px] xl:h-[820px] flex flex-col">
                         {/* Image */}
-                        <div className="h-64 sm:h-80 md:h-96 lg:h-[450px] xl:h-[500px] overflow-hidden rounded-2xl flex-shrink-0">
+                        <div className="h-55 sm:h-80 md:h-96 lg:h-[400px] xl:h-[400px] overflow-hidden rounded-2xl flex-shrink-0">
                             <img
                                 key={currentIndex}
                                 src={projImages[currentIndex]}
@@ -82,7 +82,7 @@ function ProjectCarousel() {
 
                         <button
                             onClick={handlePrevious}
-                            className="absolute top-[60%] sm:top-[65%] md:top-[60%] lg:top-[72%] left-2 -translate-y-1/2 
+                            className="absolute top-[45%] sm:top-[65%] md:top-[60%] lg:top-[60%] left-2 -translate-y-1/2 
                                 bg-gray-900/80 hover:bg-gray-900
                                 transition-all duration-300
                                 p-3 rounded-full
@@ -96,7 +96,7 @@ function ProjectCarousel() {
 
                         <button
                             onClick={handleNext}
-                            className="absolute top-[60%] sm:top-[65%] md:top-[60%] lg:top-[72%] right-2 -translate-y-1/2 
+                            className="absolute top-[45%] sm:top-[65%] md:top-[60%] lg:top-[60%] right-2 -translate-y-1/2 
                                 bg-gray-900/80 hover:bg-gray-900
                                 transition-all duration-300
                                 p-3 rounded-full
@@ -128,7 +128,7 @@ function ProjectCarousel() {
                             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#1ABC9C] mb-4">
                                 {projectDescriptions[currentIndex].title}
                             </h2>
-                            <p className="text-gray-300 text-sm md:text-base lg:text-lg leading-relaxed max-w-3xl mx-auto overflow-y-auto">
+                            <p className="text-gray-300 text-sm md:text-base lg:text-lg leading-relaxed max-w-3xl mx-auto overflow-y-auto text-justify">
                                 {projectDescriptions[currentIndex].description}
                             </p>
                         </div>
