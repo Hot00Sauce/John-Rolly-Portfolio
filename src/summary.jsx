@@ -15,7 +15,7 @@ function Summary() {
             <div className="inline-block bg-gradient-to-r from-[#1A4D4F] via-[#1ABC9C] to-[#16A085] 
               rounded-2xl px-8 py-4 shadow-lg">
               <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold text-center">
-                Web Developer
+                Junior Software Engineer
               </h1>
             </div>
             {/* Underline separator */}
@@ -23,9 +23,9 @@ function Summary() {
           </div>
 
           {/* Description text */}
-          <p className="text-gray-300 text-lg sm:text-xl leading-relaxed"
+          <p className="text-gray-300 text-lg text-left sm:text-xl leading-relaxed"
             style={{ fontFamily: 'Roboto, sans-serif' }}>
-            specialized in frontend development seeking for a great opportunity to enhance my skills while helping you achieve your goals.
+            Specializing in frontend development, eager to contribute my growing skills to a challenging opportunity and help drive your team's success.
           </p>
         </div>
       </div>
