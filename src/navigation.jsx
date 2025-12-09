@@ -69,12 +69,12 @@ function Navigation() {
         border border-white/10
         shadow-xl
         rounded-full
-        px-3 sm:px-4 md:px-4 lg:px-5 xl:px-6 py-1.5 md:py-2 lg:py-2.5 xl:py-3
+        px-3 sm:px-4 md:px-4 lg:px-5 xl:px-6 py-3 md:py-2 lg:py-2.5 xl:py-3
       ">
           <ul className="
         flex justify-center items-center flex-nowrap
         gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-3 xl:gap-4
-        text-[11px] sm:text-sm md:text-sm lg:text-sm xl:text-base
+        text-[10px] sm:text-sm md:text-sm lg:text-sm xl:text-base
         font-montserrat
         "
           >
