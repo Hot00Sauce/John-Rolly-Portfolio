@@ -79,12 +79,25 @@ function Body() {
         </div>
 
         {/* DATA ANALYTICS */}
-        <div id="data analytics" className="fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 md:h-60 xl:h-60 2xl:h-78 pb-5">
+        <div id="data analytics" className="fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 md:h-70 xl:h-75 2xl:h-78 pb-5">
           <h1 className="justify-center block text-center text-lg sm:text-xl md:text-[23px] xl:text-[30px] 2xl:text-3xl text-gray-400">
             DATA ANALYTICS
           </h1>
           <div className="justify-items-center grid grid-cols-1 gap-1">
             <CircularProgressBar percentage={80} skill="Power BI" />
+          </div>
+        </div>
+
+        {/* DEVOPS */}
+        <div id="devops" className="fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 md:h-70 xl:h-75 2xl:h-78 pb-5">
+          <h1 className="justify-center block text-center pt-8 text-lg sm:text-xl md:text-[23px] xl:text-[30px] 2xl:text-3xl text-gray-400">
+            DEVOPS
+          </h1>
+          <div className="flex justify-center">
+            <div className="justify-items-center grid grid-cols-2 gap-1 w-60 md:w-75 lg:w-90 xl:w-100 2xl:w-120">
+              <CircularProgressBar percentage={80} skill="Git" />
+              <CircularProgressBar percentage={75} skill="GitLab" />
+            </div>
           </div>
         </div>
       </div>
