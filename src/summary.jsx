@@ -15,7 +15,7 @@ function Summary() {
             <div className="inline-block bg-gradient-to-r from-[#1A4D4F] via-[#1ABC9C] to-[#16A085] 
               rounded-2xl px-8 py-4 shadow-lg">
               <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold text-center">
-                Web Developer
+                Software Engineer/Web Developer
               </h1>
             </div>
             {/* Underline separator */}
