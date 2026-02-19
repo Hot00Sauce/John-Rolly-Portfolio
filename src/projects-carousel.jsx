@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import HealthTech from './assets/HealthTech.jpg'
 import VetConnect from './assets/VetConnect.jpg'
-import TravelSpot from './assets/TravelSpot.jpg'
 import MrOwl from './assets/MrOwl.jpg'
 import BlueJade from './assets/Blue Jade.png'
 import DiagnosticMedicalGroup from './assets/Diagnostic Medical Group.png'
@@ -16,7 +15,6 @@ import projectDescriptions from './DataJsons/carousel-description.json';
 const projImages = [
     HealthTech,
     VetConnect,
-    TravelSpot,
     MrOwl,
     BlueJade,
     DiagnosticMedicalGroup,
