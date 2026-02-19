@@ -1,18 +1,62 @@
 [
     {
         "title": "HealthTech",
-        "description": "A healthcare appointment and monitoring system developed with PHP CodeIgniter. Patients can register with personal details and vital signs, upload a profile photo, book non-conflicting appointments, and rate doctors. Doctors can register with their specialization, view and update patient records, manage schedules, and view feedback. Admins can track doctor ratings, view patient history, and maintain a clean, error-free system."
+        "description": "A healthcare appointment and monitoring system developed with PHP CodeIgniter. Patients can register with personal details and vital signs, upload a profile photo, book non-conflicting appointments, and rate doctors. Doctors can register with their specialization, view and update patient records, manage schedules, and view feedback. Admins can track doctor ratings, view patient history, and maintain a clean, error-free system.",
+        "url": null
     },
     {
         "title": "VetConnect",
-        "description": "VetConnect is a web-based platform developed using Vanilla JavaScript, CSS, and HTML, designed to bridge the communication gap between pet owners and veterinarians. It features secure pet health record storage, an intuitive appointment scheduling system, real-time messaging for seamless communication, and a secure payment gateway for hassle-free transactions. With a user-friendly interface, VetConnect ensures smooth navigation, mobile responsiveness, and cross-browser compatibility, offering a consistent experience across Chrome, Firefox, Safari, and Edge. The project aims to enhance pet care accessibility and service efficiency for both users."
+        "description": "VetConnect is a web-based platform developed using Vanilla JavaScript, CSS, and HTML, designed to bridge the communication gap between pet owners and veterinarians. It features secure pet health record storage, an intuitive appointment scheduling system, real-time messaging for seamless communication, and a secure payment gateway for hassle-free transactions. With a user-friendly interface, VetConnect ensures smooth navigation, mobile responsiveness, and cross-browser compatibility, offering a consistent experience across Chrome, Firefox, Safari, and Edge. The project aims to enhance pet care accessibility and service efficiency for both users.",
+        "url": null
     },
     {
         "title": "TravelSpot",
-        "description": "TravelSpotPH is a dynamic travel guide website designed to inspire and assist users in discovering the most popular and breathtaking tourist destinations across the Philippines. Whether you're planning a weekend getaway or a long vacation, the site provides valuable information, stunning visuals, and destination highlights to help users choose the perfect travel spot. Developed using Vanilla JavaScript for the front-end and PHP for the back-end, TravelSpotPH offers a smooth user experience with intuitive navigation, allowing visitors to explore various locations, learn about their attractions, and plan their trips more effectively."
+        "description": "TravelSpotPH is a dynamic travel guide website designed to inspire and assist users in discovering the most popular and breathtaking tourist destinations across the Philippines. Whether you're planning a weekend getaway or a long vacation, the site provides valuable information, stunning visuals, and destination highlights to help users choose the perfect travel spot. Developed using Vanilla JavaScript for the front-end and PHP for the back-end, TravelSpotPH offers a smooth user experience with intuitive navigation, allowing visitors to explore various locations, learn about their attractions, and plan their trips more effectively.",
+        "url": null
     },
     {
         "title": "Mr. Owl",
-        "description": "MrOwl is an interactive web-based game that features a charming animal character named Mr. Owl, designed to provide a fun and engaging experience for players of all ages. The game centers around simple yet entertaining mechanics that challenge the player's reflexes, timing, or problem-solving skills, depending on the scenario. With a playful design and smooth user interface, MrOwl captures attention through its lively animations and lighthearted theme. This project showcases creativity in front-end development and game logic implementation, offering a delightful digital experience that blends entertainment with interactive storytelling."
+        "description": "MrOwl is an interactive web-based game that features a charming animal character named Mr. Owl, designed to provide a fun and engaging experience for players of all ages. The game centers around simple yet entertaining mechanics that challenge the player's reflexes, timing, or problem-solving skills, depending on the scenario. With a playful design and smooth user interface, MrOwl captures attention through its lively animations and lighthearted theme. This project showcases creativity in front-end development and game logic implementation, offering a delightful digital experience that blends entertainment with interactive storytelling.",
+        "url": null
+    },
+    {
+        "title": "Blue Jade",
+        "description": "Blue Jade is a sophisticated web application designed to deliver an elegant and immersive user experience. This project showcases modern web development techniques with carefully crafted interfaces and seamless functionality. Built with attention to detail, Blue Jade demonstrates proficiency in creating visually appealing and highly responsive web solutions that meet contemporary design standards.",
+        "url": "https://bluejade.ph/"
+    },
+    {
+        "title": "Diagnostic Medical Group",
+        "description": "The Diagnostic Medical Group platform is a comprehensive medical management system designed to streamline healthcare services and improve patient care coordination. This web-based solution facilitates efficient appointment scheduling, medical record management, and diagnostic service tracking. With a focus on user accessibility and data security, the platform enhances communication between medical professionals and patients while maintaining industry-standard compliance.",
+        "url": "https://diagnostiksmedigroup.com/"
+    },
+    {
+        "title": "EcoPlus",
+        "description": "EcoPlus is an environmentally-focused web platform dedicated to promoting sustainable practices and eco-friendly solutions. The application provides users with resources, information, and tools to make environmentally conscious decisions. Featuring an intuitive interface and engaging content delivery, EcoPlus demonstrates a commitment to green technology and environmental awareness through innovative web development.",
+        "url": "https://ecoplus.ph/"
+    },
+    {
+        "title": "Escobars Steak House",
+        "description": "Escobars Steak House is a modern restaurant website that combines elegant design with practical functionality. The platform features an interactive menu, online reservation system, and showcases the restaurant's premium dining experience. With responsive design and smooth navigation, the website creates an inviting digital presence that reflects the quality and ambiance of the establishment.",
+        "url": "https://escobars.io/"
+    },
+    {
+        "title": "Lakambini",
+        "description": "Lakambini is a culturally-inspired web application that celebrates heritage and tradition through modern digital expression. This project combines aesthetic design elements with functional features to create an engaging user experience. The platform demonstrates skillful integration of cultural themes with contemporary web technologies, resulting in a unique and meaningful digital presence.",
+        "url": "https://lakambinievents.ph/"
+    },
+    {
+        "title": "Luxurious Glow",
+        "description": "Luxurious Glow is an elegant e-commerce platform specializing in premium beauty and wellness products. The website features a sophisticated shopping experience with product galleries, detailed descriptions, and secure checkout functionality. With its refined design and user-friendly interface, Luxurious Glow showcases expertise in creating high-end digital retail experiences that emphasize luxury and quality.",
+        "url": "https://luxuriousglow.ph/"
+    },
+    {
+        "title": "MetroSeek",
+        "description": "MetroSeek is an innovative urban navigation and discovery platform designed to help users explore city locations, services, and attractions. The application combines mapping functionality with location-based information to provide comprehensive city guides. With intuitive search features and responsive design, MetroSeek enhances urban exploration and makes city navigation more accessible and enjoyable.",
+        "url": "https://metroseek.online/"
+    },
+    {
+        "title": "TravelSpot PH",
+        "description": "TravelSpot PH is an enhanced version of the travel guide platform, offering expanded features and improved functionality for discovering Philippine tourist destinations. This iteration includes advanced search capabilities, detailed destination profiles, and enhanced visual presentations. Built with modern web technologies, TravelSpot PH provides travelers with comprehensive planning tools and inspiring content to explore the beautiful destinations across the Philippines.",
+        "url": "https://travelspotph.vercel.app/"
     }
 ]

@@ -3,13 +3,29 @@ import HealthTech from './assets/HealthTech.jpg'
 import VetConnect from './assets/VetConnect.jpg'
 import TravelSpot from './assets/TravelSpot.jpg'
 import MrOwl from './assets/MrOwl.jpg'
+import BlueJade from './assets/Blue Jade.png'
+import DiagnosticMedicalGroup from './assets/Diagnostic Medical Group.png'
+import EcoPlus from './assets/EcoPlus.png'
+import EscobarsStakeHouse from './assets/Escobars Steak House.png'
+import Lakambini from './assets/Lakambini.png'
+import LuxuriousGlow from './assets/Luxurious Glow.png'
+import MetroSeek from './assets/MetroSeek.png'
+import TravelSpotPH from './assets/TravelSpotPH.png'
 import projectDescriptions from './DataJsons/carousel-description.json';
 
 const projImages = [
     HealthTech,
     VetConnect,
     TravelSpot,
-    MrOwl
+    MrOwl,
+    BlueJade,
+    DiagnosticMedicalGroup,
+    EcoPlus,
+    EscobarsStakeHouse,
+    Lakambini,
+    LuxuriousGlow,
+    MetroSeek,
+    TravelSpotPH
 ];
 
 function ProjectCarousel() {
@@ -72,12 +88,28 @@ function ProjectCarousel() {
                     <div className="relative w-full mx-auto bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 shadow-2xl h-[650px] sm:h-[620px] md:h-[770px] lg:h-[800px] xl:h-[820px] flex flex-col">
                         {/* Image */}
                         <div className="h-55 sm:h-80 md:h-96 lg:w-[600px] xl:w-[600px] lg:h-[300px] xl:h-[300px] overflow-hidden rounded-2xl flex-shrink-0 mx-auto">
-                            <img
-                                key={currentIndex}
-                                src={projImages[currentIndex]}
-                                alt={`Project ${currentIndex + 1}`}
-                                className="w-full h-full object-cover animate-fade-in"
-                            />
+                            {projectDescriptions[currentIndex].url ? (
+                                <a 
+                                    href={projectDescriptions[currentIndex].url} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="block w-full h-full cursor-pointer"
+                                >
+                                    <img
+                                        key={currentIndex}
+                                        src={projImages[currentIndex]}
+                                        alt={`Project ${currentIndex + 1}`}
+                                        className="w-full h-full object-cover animate-fade-in hover:scale-105 transition-transform duration-300"
+                                    />
+                                </a>
+                            ) : (
+                                <img
+                                    key={currentIndex}
+                                    src={projImages[currentIndex]}
+                                    alt={`Project ${currentIndex + 1}`}
+                                    className="w-full h-full object-cover animate-fade-in"
+                                />
+                            )}
                         </div>
 
                         <button
