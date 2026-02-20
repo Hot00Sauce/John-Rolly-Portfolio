@@ -64,7 +64,7 @@ function ProjectCarousel() {
     return (
         <div
             id="carousel"
-            className="projects-carousel mt-5 px-5 lg:px-8 2xl:px-10 pt-15 lg:pt-20 xl:pt-25"
+            className="projects-carousel px-5 lg:px-8 2xl:px-10 pt-15 lg:pt-20 xl:pt-25"
         >
             <h1
                 id="projects"
@@ -87,9 +87,9 @@ function ProjectCarousel() {
                         {/* Image */}
                         <div className="h-55 sm:h-80 md:h-96 lg:w-[600px] xl:w-[600px] lg:h-[300px] xl:h-[300px] overflow-hidden rounded-2xl flex-shrink-0 mx-auto">
                             {projectDescriptions[currentIndex].url ? (
-                                <a 
-                                    href={projectDescriptions[currentIndex].url} 
-                                    target="_blank" 
+                                <a
+                                    href={projectDescriptions[currentIndex].url}
+                                    target="_blank"
                                     rel="noopener noreferrer"
                                     className="block w-full h-full cursor-pointer"
                                 >
