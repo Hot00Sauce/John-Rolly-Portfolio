@@ -38,69 +38,63 @@ function Body() {
         SKILLS
       </h1>
 
-      <div className="grid md:grid-cols-2 lg:w-250 xl:w-310 gap-5 pt-3 md:pt-6 lg:pt-8 xl:pt-9 2xl:pt-12 justify-items-center">
-        {/* VANILLA */}
-        <div className="justify-items-center fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 pb-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-3 md:pt-6 lg:pt-8 xl:pt-9 2xl:pt-12 justify-items-center w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="justify-items-center fade-in shadow-2xl rounded-xl w-full max-w-md lg:max-w-xl xl:max-w-2xl pb-5 overflow-hidden">
           <h1
             id="vanilla"
             className="justify-center block text-center pt-8 text-lg sm:text-xl md:text-[23px] xl:text-[30px] 2xl:text-3xl text-gray-400"
           >
             FRONT-END
           </h1>
-          <div className="justify-center grid grid-cols-3 gap-1 w-90 md:w-80 lg:w-120">
-            <CircularProgressBar percentage={85} skill="HTML" />
-            <CircularProgressBar percentage={85} skill="CSS" />
-            <CircularProgressBar percentage={80} skill="JavaScript" />
-            <CircularProgressBar percentage={80} skill="React" />
-            <CircularProgressBar percentage={80} skill="Tailwind" />
+          <div className="justify-center grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 w-full px-3 sm:px-4 lg:px-6">
+            <CircularProgressBar percentage={90} skill="React" />
+            <CircularProgressBar percentage={85} skill="TypeScript" />
+            <CircularProgressBar percentage={85} skill="Angular" />
+            <CircularProgressBar percentage={90} skill="HTML5" />
+            <CircularProgressBar percentage={90} skill="CSS3" />
+            <CircularProgressBar percentage={85} skill="Tailwind" />
           </div>
         </div>
 
-        {/* WEBSITE BUILDER */}
-        <div id="website builder" className="fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 md:h-70 xl:h-75 2xl:h-78 pb-5">
+        <div id="website builder" className="fade-in shadow-2xl rounded-xl w-full max-w-md lg:max-w-xl xl:max-w-2xl pb-5 overflow-hidden">
           <h1 className="justify-center block text-center pt-8 text-lg sm:text-xl md:text-[23px] xl:text-[30px] 2xl:text-3xl text-gray-400">
-            WEBSITE BUILDER
+            CMS & PLATFORMS
           </h1>
-          <div className="justify-items-center grid grid-cols-1 gap-1">
-            <CircularProgressBar percentage={85} skill="WordPress" />
+          <div className="justify-center grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 w-full px-3 sm:px-4 lg:px-6">
+            <CircularProgressBar percentage={90} skill="WordPress" />
+            <CircularProgressBar percentage={85} skill="Elementor" />
+            <CircularProgressBar percentage={80} skill="WooCommerce" />
+            <CircularProgressBar percentage={75} skill="WPCode" />
+            <CircularProgressBar percentage={80} skill="SEO" />
+            <CircularProgressBar percentage={78} skill="CRM" />
           </div>
         </div>
 
-        {/* BACK-END */}
-        <div id="back end" className="fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 pb-5">
+        <div id="back end" className="fade-in shadow-2xl rounded-xl w-full max-w-md lg:max-w-xl xl:max-w-2xl pb-5 overflow-hidden">
           <h1 className="justify-center block text-center pt-8 text-lg sm:text-xl md:text-[23px] xl:text-[30px] 2xl:text-3xl text-gray-400">
-            BACK-END
+            BACK-END & DB
           </h1>
-          <div className="justify-items-center grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 xl:w-140 2xl:grid-cols-3 gap-1 w-90 md:w-80 lg:w-120 2xl:w-150">
-            <CircularProgressBar percentage={75} skill="Python" />
-            <CircularProgressBar percentage={80} skill="PHP" />
-            <CircularProgressBar percentage={75} skill="NodeJs" />
+          <div className="justify-center grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 w-full px-3 sm:px-4 lg:px-6">
+            <CircularProgressBar percentage={80} skill="Node.js" />
+            <CircularProgressBar percentage={85} skill="PHP" />
+            <CircularProgressBar percentage={80} skill="CodeIgniter" />
+            <CircularProgressBar percentage={85} skill="MySQL" />
             <CircularProgressBar percentage={80} skill="PostgreSQL" />
-            <CircularProgressBar percentage={80} skill="MySQL" />
+            <CircularProgressBar percentage={78} skill="MongoDB" />
           </div>
         </div>
 
-        {/* DATA ANALYTICS */}
-        <div id="data analytics" className="fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 md:h-70 xl:h-75 2xl:h-78 pb-5">
+        <div id="data analytics" className="fade-in shadow-2xl rounded-xl w-full max-w-md lg:max-w-xl xl:max-w-2xl pb-5 overflow-hidden">
           <h1 className="justify-center block text-center text-lg sm:text-xl md:text-[23px] xl:text-[30px] 2xl:text-3xl text-gray-400">
-            DATA ANALYTICS
+            DEVOPS & TOOLS
           </h1>
-          <div className="justify-items-center grid grid-cols-1 gap-1">
-            <CircularProgressBar percentage={80} skill="Power BI" />
-          </div>
-        </div>
-
-        {/* DEVOPS */}
-        <div id="devops" className="fade-in shadow-2xl rounded-xl w-90 md:w-80 lg:w-120 xl:w-150 md:h-70 xl:h-100 2xl:h-100 pb-5">
-          <h1 className="justify-center block text-center pt-8 text-lg sm:text-xl md:text-[23px] xl:text-[30px] 2xl:text-3xl text-gray-400">
-            DEVOPS
-          </h1>
-          <div className="flex justify-center">
-            <div className="justify-items-center grid grid-cols-2 gap-1 w-60 md:w-75 lg:w-90 xl:w-100 2xl:w-120">
-              <CircularProgressBar percentage={80} skill="Git" />
-              <CircularProgressBar percentage={75} skill="GitLab" />
-              <CircularProgressBar percentage={75} skill="Docker" />
-            </div>
+          <div className="justify-center grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 w-full px-3 sm:px-4 lg:px-6">
+            <CircularProgressBar percentage={80} skill="Docker" />
+            <CircularProgressBar percentage={78} skill="AWS" />
+            <CircularProgressBar percentage={85} skill="Vercel" />
+            <CircularProgressBar percentage={90} skill="Git/GitHub" />
+            <CircularProgressBar percentage={75} skill="n8n" />
+            <CircularProgressBar percentage={80} skill="Figma" />
           </div>
         </div>
       </div>

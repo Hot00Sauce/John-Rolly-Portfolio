@@ -16,10 +16,11 @@ function Footer() {
     return (
         <div href="#contact" id="contact" className="h-145 mt-0 md:h-160 xl:h-185
          bg-gradient-to-b from-gray-900 to-gray-950 justify-center items-center block">
-            <div className="justify-center items-center text-center pt-10 
+            <div className="justify-center items-center text-center pt-10 px-6
             text-xl xl:text-2xl
             text-[#1ABC9C] font-bold">
-                <h1 id="contact me" >CONTACT ME</h1>
+                <h1 id="contact me" >CONTACT ME</h1><br />
+
             </div>
             {/* contact info list */}
             <div className="relative h-25 mt-5 xl:text-xl text-gray-300">
@@ -27,19 +28,25 @@ function Footer() {
                     <li id="contact number" className="flex gap-3"><svg className="w-6 h-6" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.914412 0.711352L1.31813 0.611015C1.69644 0.516997 2.10062 0.66894 2.26265 0.966073L2.58504 1.55738C2.72555 1.81506 2.64759 2.11807 2.39229 2.30652L1.68193 2.83094C1.72576 3.14461 1.86133 3.45349 2.08862 3.75758C2.31594 4.06164 2.59982 4.31388 2.94028 4.51428L3.79348 4.29299C4.11688 4.20911 4.46908 4.3055 4.66745 4.53219L5.12957 5.06025C5.36019 5.32374 5.31872 5.68728 5.03255 5.91069L4.72592 6.15012C4.4207 6.38844 3.98477 6.47489 3.58149 6.37707C2.6294 6.14607 1.75404 5.4603 0.955373 4.31977C0.155547 3.17754 -0.126734 2.20845 0.108529 1.41249C0.207529 1.07756 0.514096 0.810839 0.914412 0.711352Z" fill="#1ABC9C" />
                     </svg>
-                        <h2>09606892682</h2>
+                        <h2>+63 938 561 6893</h2>
                     </li>
                     <li id="address" className="flex gap-3">
                         <svg className="w-6 h-6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4.26777 4.46313L3.92697 4.81561C3.67577 5.07341 3.34986 5.40489 2.94908 5.81009C2.69866 6.06333 2.30135 6.0633 2.05095 5.81003L1.0486 4.79038C0.922621 4.66103 0.817172 4.55195 0.732232 4.46313C-0.244077 3.44213 -0.244077 1.78675 0.732232 0.765751C1.70854 -0.25525 3.29146 -0.25525 4.26777 0.765751C5.24408 1.78675 5.24408 3.44213 4.26777 4.46313ZM3.21785 2.69692C3.21785 2.28231 2.89645 1.94621 2.5 1.94621C2.10355 1.94621 1.78215 2.28231 1.78215 2.69692C1.78215 3.11152 2.10355 3.44763 2.5 3.44763C2.89645 3.44763 3.21785 3.11152 3.21785 2.69692Z" fill="#1ABC9C" />
                         </svg>
-                        <h2>Tunasan Muntinlupa City</h2>
+                        <h2>Muntinlupa City, Metro Manila, Philippines</h2>
                     </li>
                     <li id="email" className="flex gap-3">
                         <svg className="w-6 h-6" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 1.44V3.98438C5 4.52594 4.66088 4.9685 4.2336 4.99841L4.1875 5H0.8125C0.379243 5 0.0251875 4.57609 0.00128502 4.042L0 3.98438V1.44L2.413 3.02013C2.4675 3.05578 2.5325 3.05578 2.587 3.02013L5 1.44ZM0.8125 0H4.1875C4.60868 0 4.95503 0.400597 4.99595 0.913609L2.5 2.54791L0.00404751 0.913609C0.043465 0.419597 0.36608 0.0298281 0.766022 0.00163436L0.8125 0Z" fill="#1ABC9C" />
                         </svg>
-                        <h2>johnrollycedillo15@gmail.com</h2>
+                        <h2>johnrollycedillo@gmail.com</h2>
+                    </li>
+                    <li id="portfolio-link" className="flex gap-3">
+                        <svg className="w-6 h-6" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5C0 3.88071 1.11929 5 2.5 5C3.88071 5 5 3.88071 5 2.5C5 1.11929 3.88071 0 2.5 0ZM2.5 0.83333C3.4401 0.83333 4.16667 1.5599 4.16667 2.5C4.16667 3.4401 3.4401 4.16667 2.5 4.16667C1.5599 4.16667 0.83333 3.4401 0.83333 2.5C0.83333 1.5599 1.5599 0.83333 2.5 0.83333ZM1.66667 1.66667H3.33333V3.33333H1.66667V1.66667Z" fill="#1ABC9C" />
+                        </svg>
+                        <h2>john-rolly-cedillo-portfolio.vercel.app</h2>
                     </li>
                 </ul>
             </div>
