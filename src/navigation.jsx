@@ -54,7 +54,7 @@ function Navigation() {
 
   return (
     <nav className="
-    fixed lg:sticky bottom-0 lg:top-0 z-50
+    fixed lg:sticky bottom-3 sm:bottom-4 lg:top-0 z-50
     w-full
     pb-3 lg:pb-2.5
     pt-3 lg:pt-3

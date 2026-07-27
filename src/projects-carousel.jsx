@@ -64,7 +64,7 @@ function ProjectCarousel() {
     return (
         <div
             id="carousel"
-            className="projects-carousel px-5 lg:px-8 2xl:px-10 pt-15 lg:pt-20 xl:pt-25"
+            className="projects-carousel px-4 sm:px-5 lg:px-8 2xl:px-10 pt-12 sm:pt-14 lg:pt-20 xl:pt-25"
         >
             <h1
                 id="projects"
@@ -83,9 +83,9 @@ function ProjectCarousel() {
                     onTouchEnd={startAutoSlide}
                     className="w-full max-w-5xl"
                 >
-                    <div className="relative w-full mx-auto bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 shadow-2xl h-[650px] sm:h-[620px] md:h-[770px] lg:h-[800px] xl:h-[820px] flex flex-col">
+                    <div className="relative w-full mx-auto bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-4 sm:p-6 shadow-2xl h-[560px] sm:h-[620px] md:h-[740px] lg:h-[800px] xl:h-[820px] flex flex-col">
                         {/* Image */}
-                        <div className="h-55 sm:h-80 md:h-96 lg:w-[600px] xl:w-[600px] lg:h-[300px] xl:h-[300px] overflow-hidden rounded-2xl flex-shrink-0 mx-auto">
+                        <div className="h-44 sm:h-72 md:h-96 lg:w-[600px] xl:w-[600px] lg:h-[300px] xl:h-[300px] overflow-hidden rounded-2xl flex-shrink-0 mx-auto">
                             {projectDescriptions[currentIndex].url ? (
                                 <a
                                     href={projectDescriptions[currentIndex].url}
@@ -154,7 +154,7 @@ function ProjectCarousel() {
                         </div>
 
                         {/* Description */}
-                        <div id="description" className=" text-center transition-all duration-500 mt-6 px-10 flex-1 flex flex-col justify-start overflow-hidden">
+                        <div id="description" className=" text-center transition-all duration-500 mt-4 sm:mt-6 px-4 sm:px-10 flex-1 flex flex-col justify-start overflow-hidden">
                             <h2 className="text-xl md:text-2xl lg:text-1xl font-bold text-[#1ABC9C] mb-4">
                                 {projectDescriptions[currentIndex].title}
                             </h2>

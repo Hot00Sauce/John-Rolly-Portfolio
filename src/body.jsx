@@ -28,7 +28,7 @@ function Body() {
   }, []);
 
   return (
-    <div className="body w-full mt-15 md:mt-10 pt-20 md:pt-40 lg:pt-45 xl:pt-90 2xl:pt-95 justify-items-center pb-15">
+    <div className="body w-full mt-10 sm:mt-12 md:mt-10 pt-16 sm:pt-18 md:pt-28 lg:pt-45 xl:pt-90 2xl:pt-95 justify-items-center pb-15">
       <ProjectCarousel />
 
       <h1

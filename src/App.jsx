@@ -10,14 +10,14 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      <div className="relative -mt-20">
+      <div className="relative -mt-10 sm:-mt-14 md:-mt-20">
         <div className="
           absolute
           top-0
           w-full
-          h-80
-          sm:h-[400px]
-          md:h-[500px]
+           h-[26rem]
+           sm:h-[29rem]
+           md:h-[31rem]
           lg:h-[662px]
           xl:h-[780px]
           items-top justify-center

@@ -14,17 +14,17 @@ function Footer() {
         e.target.reset();
     };
     return (
-        <div href="#contact" id="contact" className="h-145 mt-0 md:h-160 xl:h-185
-         bg-gradient-to-b from-gray-900 to-gray-950 justify-center items-center block">
-            <div className="justify-center items-center text-center pt-10 px-6
+        <div href="#contact" id="contact" className="min-h-[36rem] sm:min-h-[38rem] md:h-160 xl:h-185
+         bg-gradient-to-b from-gray-900 to-gray-950 justify-center items-center block pb-24 sm:pb-20 md:pb-0">
+            <div className="justify-center items-center text-center pt-10 px-4 sm:px-6
             text-xl xl:text-2xl
             text-[#1ABC9C] font-bold">
                 <h1 id="contact me" >CONTACT ME</h1><br />
 
             </div>
             {/* contact info list */}
-            <div className="relative h-25 mt-5 xl:text-xl text-gray-300">
-                <ul style={{ fontFamily: 'Roboto, sans-serif' }} className="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 gap-3">
+            <div className="relative h-25 mt-5 xl:text-xl text-gray-300 px-4 sm:px-6">
+                <ul style={{ fontFamily: 'Roboto, sans-serif' }} className="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 gap-2 sm:gap-3 w-[min(92vw,26rem)] sm:w-auto">
                     <li id="contact number" className="flex gap-3"><svg className="w-6 h-6" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.914412 0.711352L1.31813 0.611015C1.69644 0.516997 2.10062 0.66894 2.26265 0.966073L2.58504 1.55738C2.72555 1.81506 2.64759 2.11807 2.39229 2.30652L1.68193 2.83094C1.72576 3.14461 1.86133 3.45349 2.08862 3.75758C2.31594 4.06164 2.59982 4.31388 2.94028 4.51428L3.79348 4.29299C4.11688 4.20911 4.46908 4.3055 4.66745 4.53219L5.12957 5.06025C5.36019 5.32374 5.31872 5.68728 5.03255 5.91069L4.72592 6.15012C4.4207 6.38844 3.98477 6.47489 3.58149 6.37707C2.6294 6.14607 1.75404 5.4603 0.955373 4.31977C0.155547 3.17754 -0.126734 2.20845 0.108529 1.41249C0.207529 1.07756 0.514096 0.810839 0.914412 0.711352Z" fill="#1ABC9C" />
                     </svg>
@@ -61,9 +61,9 @@ function Footer() {
                         name="message"
                         placeholder="Type your message here to email directly..."
                         required
-                        className="border p-3 w-80 
-                        h-40 md:h-50 xl:h-70
-                        md:w-100 lg:w-150 xl:w-200
+                        className="border p-3 w-[92vw] max-w-sm
+                        h-40 sm:h-44 md:h-50 xl:h-70
+                        sm:max-w-md md:w-100 lg:w-150 xl:w-200
                         rounded mb-4 resize-none bg-white text-black border-none outline-none focus:ring-2 focus:ring-[#1ABC9C] transition"
                     ></textarea>
 
@@ -112,7 +112,7 @@ function Footer() {
                     </a>
 
                     {/* Download Resume Icon */}
-                    <a href="/Cedillo, John Rolly CV.pdf" download="Cedillo, John Rolly CV.pdf" title="Download Resume">
+                    <a href="/Front-End_Software_Engineer_Cedillo_John_Rolly_CV.pdf" download="Front-End_Software_Engineer_Cedillo_John_Rolly_CV.pdf" title="Download Resume">
                         <svg className="text-[#1ABC9C] hover:text-white hover:scale-110 duration-300 cursor-pointer drop-shadow-lg" width="44" height="44" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 13.59L15.88 10.71L17.29 12.12L12 17.41L6.71 12.12L8.12 10.71L11 13.59V7H13V13.59Z" fill="currentColor" />
                         </svg>
