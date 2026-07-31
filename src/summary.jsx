@@ -21,7 +21,7 @@ function Summary() {
 
           <p className="text-gray-300 text-sm sm:text-lg text-left leading-relaxed"
             style={{ fontFamily: 'Roboto, sans-serif' }}>
-            Front-End Software Engineer specializing in React.js and TypeScript, with full-stack experience across Node.js, PHP, and SQL databases. I focus on building performant web applications, reliable backend integrations, and clean user interfaces that scale well across projects.
+            Software Engineer specializing in React.js and TypeScript, with full-stack experience across Node.js, PHP, and SQL databases. I focus on building performant web applications, reliable backend integrations, and clean user interfaces that scale well across projects.
           </p>
         </div>
       </div>

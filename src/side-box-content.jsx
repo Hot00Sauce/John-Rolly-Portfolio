@@ -12,7 +12,7 @@ function SideBoxContent() {
           text-amber-50 font-semibold">John Rolly N. Cedillo</h1>
         <h2 id="portfolio" className="justify-center flex 
             text-lg sm:text-xl md:text-2xl lg:text-4xl
-          text-black mt-2">Front-End Junior Software Engineer</h2>
+          text-black mt-2">Software Engineer</h2>
         <p className="mt-4 text-xs sm:text-sm md:text-base text-white/90 max-w-xs sm:max-w-md md:max-w-xl leading-relaxed">
           Building responsive React and TypeScript experiences with a strong focus on performance, usability, and clean, maintainable code.
         </p>
