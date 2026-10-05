@@ -155,7 +155,7 @@ function Experience() {
                                     Spindiv Kinetics
                                 </h3>
                                 <div className="inline-block px-3 py-1 bg-gradient-to-r from-[#1A4D4F] to-[#1ABC9C] rounded-full mb-2">
-                                    <p className="text-xs sm:text-xs lg:text-sm text-white font-medium">Web Developer</p>
+                                    <p className="text-xs sm:text-xs lg:text-sm text-white font-medium">Senior Web Developer</p>
                                 </div>
                                 <p className="text-sm text-gray-400 mb-2">October 2025 – July 2026</p>
                             </div>
