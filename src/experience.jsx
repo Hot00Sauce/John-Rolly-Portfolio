@@ -148,7 +148,7 @@ function Experience() {
                         </ul>
                     </div>
 
-                    <div className="group bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 shadow-xl sm:shadow-2xl hover:shadow-[#1ABC9C]/20 transition-all duration-300 hover:-translate-y-1 sm:hover:-translate-y-2 border border-gray-700/50 hover:border-[#1ABC9C]/50 md:col-span-2 md:max-w-xl md:mx-auto">
+                    <div className="group bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 shadow-xl sm:shadow-2xl hover:shadow-[#1ABC9C]/20 transition-all duration-300 hover:-translate-y-1 sm:hover:-translate-y-2 border border-gray-700/50 hover:border-[#1ABC9C]/50">
                         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3 sm:mb-4">
                             <div className="w-full">
                                 <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2 group-hover:text-[#1ABC9C] transition-colors">
@@ -157,7 +157,26 @@ function Experience() {
                                 <div className="inline-block px-3 py-1 bg-gradient-to-r from-[#1A4D4F] to-[#1ABC9C] rounded-full mb-2">
                                     <p className="text-xs sm:text-xs lg:text-sm text-white font-medium">Web Developer</p>
                                 </div>
-                                <p className="text-sm text-gray-400 mb-2">October 2025 – Present</p>
+                                <p className="text-sm text-gray-400 mb-2">October 2025 – July 2026</p>
+                            </div>
+                        </div>
+                        <div className="h-0.5 bg-gradient-to-r from-transparent via-[#1ABC9C] to-transparent opacity-30 mb-3 sm:mb-4"></div>
+                        <ul className="space-y-2 sm:space-y-3 text-gray-300">
+                            <li className="flex items-start"><span className="text-[#1ABC9C] mr-2 sm:mr-3 mt-0.5 sm:mt-1 flex-shrink-0 text-sm sm:text-base">▹</span><span className="text-sm sm:text-sm lg:text-base">Developed high-traffic websites using PHP, HTML, CSS, and JavaScript.</span></li>
+                            <li className="flex items-start"><span className="text-[#1ABC9C] mr-2 sm:mr-3 mt-0.5 sm:mt-1 flex-shrink-0 text-sm sm:text-base">▹</span><span className="text-sm sm:text-sm lg:text-base">Managed Hostinger server infrastructure and 10+ domains while maintaining 99.9% uptime.</span></li>
+                            <li className="flex items-start"><span className="text-[#1ABC9C] mr-2 sm:mr-3 mt-0.5 sm:mt-1 flex-shrink-0 text-sm sm:text-base">▹</span><span className="text-sm sm:text-sm lg:text-base">Implemented security measures, managed multi-site eCommerce platforms, and built custom Elementor UI components.</span></li>
+                        </ul>
+                    </div>
+                    <div className="group bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 shadow-xl sm:shadow-2xl hover:shadow-[#1ABC9C]/20 transition-all duration-300 hover:-translate-y-1 sm:hover:-translate-y-2 border border-gray-700/50 hover:border-[#1ABC9C]/50 ">
+                        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3 sm:mb-4">
+                            <div className="w-full">
+                                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2 group-hover:text-[#1ABC9C] transition-colors">
+                                    7Figures Local
+                                </h3>
+                                <div className="inline-block px-3 py-1 bg-gradient-to-r from-[#1A4D4F] to-[#1ABC9C] rounded-full mb-2">
+                                    <p className="text-xs sm:text-xs lg:text-sm text-white font-medium">Web Developer</p>
+                                </div>
+                                <p className="text-sm text-gray-400 mb-2">August 2026 – Present</p>
                             </div>
                         </div>
                         <div className="h-0.5 bg-gradient-to-r from-transparent via-[#1ABC9C] to-transparent opacity-30 mb-3 sm:mb-4"></div>
