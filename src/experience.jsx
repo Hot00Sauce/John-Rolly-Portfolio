@@ -181,9 +181,12 @@ function Experience() {
                         </div>
                         <div className="h-0.5 bg-gradient-to-r from-transparent via-[#1ABC9C] to-transparent opacity-30 mb-3 sm:mb-4"></div>
                         <ul className="space-y-2 sm:space-y-3 text-gray-300">
-                            <li className="flex items-start"><span className="text-[#1ABC9C] mr-2 sm:mr-3 mt-0.5 sm:mt-1 flex-shrink-0 text-sm sm:text-base">▹</span><span className="text-sm sm:text-sm lg:text-base">Developed high-traffic websites using PHP, HTML, CSS, and JavaScript.</span></li>
-                            <li className="flex items-start"><span className="text-[#1ABC9C] mr-2 sm:mr-3 mt-0.5 sm:mt-1 flex-shrink-0 text-sm sm:text-base">▹</span><span className="text-sm sm:text-sm lg:text-base">Managed Hostinger server infrastructure and 10+ domains while maintaining 99.9% uptime.</span></li>
-                            <li className="flex items-start"><span className="text-[#1ABC9C] mr-2 sm:mr-3 mt-0.5 sm:mt-1 flex-shrink-0 text-sm sm:text-base">▹</span><span className="text-sm sm:text-sm lg:text-base">Implemented security measures, managed multi-site eCommerce platforms, and built custom Elementor UI components.</span></li>
+                            <li className="flex items-start"><span className="text-[#1ABC9C] mr-2 sm:mr-3 mt-0.5 sm:mt-1 flex-shrink-0 text-sm sm:text-base">▹</span><span className="text-sm sm:text-sm lg:text-base">Rebuilt a client website from the ground up, improving structure, performance, and mobile
+                                responsiveness</span></li>
+                            <li className="flex items-start"><span className="text-[#1ABC9C] mr-2 sm:mr-3 mt-0.5 sm:mt-1 flex-shrink-0 text-sm sm:text-base">▹</span><span className="text-sm sm:text-sm lg:text-base">Published SEO- and GEO-optimized content on an ongoing basis to improve organic visibility and
+                                AI-driven search discoverability</span></li>
+                            <li className="flex items-start"><span className="text-[#1ABC9C] mr-2 sm:mr-3 mt-0.5 sm:mt-1 flex-shrink-0 text-sm sm:text-base">▹</span><span className="text-sm sm:text-sm lg:text-base">Implemented structured data (Schema markup) across site pages to improve search engine indexing
+                                and rich result eligibility</span></li>
                         </ul>
                     </div>
                 </div>
