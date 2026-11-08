@@ -1,21 +1,35 @@
 import emailjs from '@emailjs/browser';
+import { useState } from 'react';
+
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const CONTACT_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID;
+const AUTO_REPLY_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_AUTO_REPLY_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+if (!EMAILJS_SERVICE_ID || !CONTACT_TEMPLATE_ID || !AUTO_REPLY_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
+    throw new Error('Missing EmailJS environment configuration.');
+}
 
 function Footer() {
+    const [submissionStatus, setSubmissionStatus] = useState(null);
+
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_slfcyib', 'template_1y7yi9m', e.target, '2WORZNoluJeTp53Yg')
-            .then((result) => {
-                alert("Message sent!");
-            }, (error) => {
-                alert("Failed to send message.");
+        Promise.all([
+            emailjs.sendForm(EMAILJS_SERVICE_ID, CONTACT_TEMPLATE_ID, e.target, EMAILJS_PUBLIC_KEY),
+            emailjs.sendForm(EMAILJS_SERVICE_ID, AUTO_REPLY_TEMPLATE_ID, e.target, EMAILJS_PUBLIC_KEY)
+        ]).then(() => {
+                setSubmissionStatus('success');
+                e.target.reset();
+            })
+            .catch(() => {
+                setSubmissionStatus('error');
             });
-
-        e.target.reset();
     };
     return (
-        <div href="#contact" id="contact" className="min-h-[36rem] sm:min-h-[38rem] md:h-160 xl:h-185
-         bg-gradient-to-b from-gray-900 to-gray-950 justify-center items-center block pb-24 sm:pb-20 md:pb-0">
+        <div href="#contact" id="contact" className="min-h-[42rem] bg-gradient-to-b from-gray-900 to-gray-950
+         justify-center items-center block pb-12 sm:pb-14">
             <div className="justify-center items-center text-center pt-10 px-4 sm:px-6
             text-xl xl:text-2xl
             text-[#1ABC9C] font-bold">
@@ -54,30 +68,60 @@ function Footer() {
             <div id="text area message" className="justify-items-center">
                 {/* The contact form */}
                 <form
-                    className="block mx-auto pt-8 text-center"
+                    className="block mx-auto w-[min(90vw,48rem)] pt-8 text-center"
                     onSubmit={sendEmail}
                 >
+                    <div className="grid gap-3 sm:grid-cols-2">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Your name"
+                            aria-label="Your name"
+                            required
+                            className="min-w-0 rounded border-none bg-white p-3 text-black outline-none transition focus:ring-2 focus:ring-[#1ABC9C]"
+                        />
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Your email"
+                            aria-label="Your email"
+                            required
+                            className="min-w-0 rounded border-none bg-white p-3 text-black outline-none transition focus:ring-2 focus:ring-[#1ABC9C]"
+                        />
+                        <input
+                            type="text"
+                            name="company"
+                            placeholder="Company (optional)"
+                            aria-label="Company"
+                            className="min-w-0 rounded border-none bg-white p-3 text-black outline-none transition focus:ring-2 focus:ring-[#1ABC9C]"
+                        />
+                        <input
+                            type="text"
+                            name="subject"
+                            placeholder="Subject"
+                            aria-label="Subject"
+                            required
+                            className="min-w-0 rounded border-none bg-white p-3 text-black outline-none transition focus:ring-2 focus:ring-[#1ABC9C]"
+                        />
+                    </div>
                     <textarea
                         name="message"
-                        placeholder="Type your message here to email directly..."
+                        placeholder="Tell me about the role, project, or opportunity..."
+                        aria-label="Message"
                         required
-                        className="border p-3 w-[92vw] max-w-sm
-                        h-40 sm:h-44 md:h-50 xl:h-70
-                        sm:max-w-md md:w-100 lg:w-150 xl:w-200
-                        rounded mb-4 resize-none bg-white text-black border-none outline-none focus:ring-2 focus:ring-[#1ABC9C] transition"
+                        className="mt-3 h-32 w-full resize-none rounded border-none bg-white p-3 text-black outline-none transition focus:ring-2 focus:ring-[#1ABC9C]
+                        sm:h-36 md:h-40 lg:h-44"
                     ></textarea>
-
-                    <br />
 
                     <button id="send"
                         type="submit"
-                        className="bg-[#1ABC9C] text-white px-4 py-2 rounded-full mt-0 hover:bg-[#149982] transition"
+                        className="mt-4 rounded-full bg-[#1ABC9C] px-6 py-2 text-white transition hover:bg-[#149982]"
                     >
                         Send
                     </button>
                 </form>
                 {/* this is the social media icon section */}
-                <div id="social media icon" className="flex items-center justify-center gap-4 mx-auto pt-4 sm:pt-3 md:pt-4 lg:pt-5">
+                <div id="social media icon" className="flex items-center justify-center gap-4 mx-auto pt-8">
                     <a href="https://www.instagram.com/jo_0.0_hn/">
                         <svg className="duration-300 text-gray-400 cursor-pointer hover:text-[#1ABC9C]"
                             width="44" height="44" viewBox="0 0 44 44" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -120,9 +164,44 @@ function Footer() {
                 </div>
             </div>
 
-            <footer id="footer" className="w-full text-center py-2 bg-gray-950 text-sm text-gray-400 mt-7 pb-15 md:pb-15 lg:-pb-10 xl:-pb-10">
+            <footer id="footer" className="mt-8 w-full bg-gray-950 py-4 text-center text-sm text-gray-400">
                 © {new Date().getFullYear()} John Rolly Cedillo. All rights reserved.
             </footer>
+
+            {submissionStatus && (
+                <div
+                    className="fixed inset-0 z-[60] flex items-center justify-center bg-gray-950/75 px-4 backdrop-blur-sm"
+                    role="presentation"
+                    onClick={() => setSubmissionStatus(null)}
+                >
+                    <div
+                        className="w-full max-w-sm rounded-2xl border border-[#1ABC9C]/50 bg-gradient-to-br from-gray-800 to-gray-950 p-6 text-center shadow-2xl shadow-black/40 sm:p-8"
+                        role="alertdialog"
+                        aria-modal="true"
+                        aria-labelledby="submission-title"
+                        onClick={(event) => event.stopPropagation()}
+                    >
+                        <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#1ABC9C]/15 text-3xl text-[#1ABC9C]">
+                            {submissionStatus === 'success' ? '✓' : '!'}
+                        </div>
+                        <h2 id="submission-title" className="text-xl font-bold text-white sm:text-2xl">
+                            {submissionStatus === 'success' ? 'Message sent!' : 'Something went wrong'}
+                        </h2>
+                        <p className="mt-3 text-sm leading-relaxed text-gray-300 sm:text-base">
+                            {submissionStatus === 'success'
+                                ? 'Thank you for reaching out. I will get back to you as soon as possible.'
+                                : 'Your message could not be sent. Please try again or contact me directly by email.'}
+                        </p>
+                        <button
+                            type="button"
+                            className="mt-6 rounded-full border border-[#1ABC9C] bg-[#1ABC9C] px-6 py-2 font-semibold text-gray-950 transition hover:bg-transparent hover:text-[#1ABC9C]"
+                            onClick={() => setSubmissionStatus(null)}
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

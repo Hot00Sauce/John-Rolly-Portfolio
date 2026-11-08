@@ -31,6 +31,12 @@ function SideBoxContent() {
         </p>
       </div>
       <SocialMediaIcon />
+      <a
+        href="#contact"
+        className="mt-6 inline-flex min-w-36 items-center justify-center rounded-full border-2 border-[#1ABC9C] bg-gray-950 px-6 py-2.5 text-sm font-bold !text-[#1ABC9C] shadow-lg shadow-black/25 transition duration-300 hover:-translate-y-1 hover:scale-105 hover:border-[#7de8d1] hover:bg-[#1ABC9C] hover:!text-gray-950 hover:shadow-xl hover:shadow-[#1ABC9C]/30 active:translate-y-0 active:scale-100"
+      >
+        <span>Contact me</span>
+      </a>
     </div>
   );
 }

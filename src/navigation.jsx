@@ -65,9 +65,9 @@ function Navigation() {
       ">
         <div className="
         max-w-[100%] sm:max-w-[85%] md:max-w-lg lg:max-w-xl xl:max-w-2xl
-        backdrop-blur-lg bg-gradient-to-b from-gray-900/60 to-gray-900/40
-        border border-white/10
-        shadow-xl
+        backdrop-blur-lg bg-gradient-to-b from-gray-800/95 to-gray-900/90
+        border border-[#1ABC9C]/40
+        shadow-[0_8px_24px_rgba(0,0,0,0.45),0_0_18px_rgba(26,188,156,0.18)]
         rounded-full
         px-3 sm:px-4 md:px-4 lg:px-5 xl:px-6 py-3 md:py-2 lg:py-2.5 xl:py-3
       ">
@@ -81,7 +81,7 @@ function Navigation() {
             <li>
               <a
                 className={`
-        ${activeSection === 'summary' ? 'bg-[#1ABC9C] !text-gray-900' : 'text-gray-300 hover:text-[#1ABC9C]'}
+        ${activeSection === 'summary' ? 'bg-[#1ABC9C] !text-gray-900' : 'text-gray-200 hover:text-[#1ABC9C]'}
         focus:text-[#1ABC9C]
         focus:bg-gray-700/50
         active:bg-[#1ABC9C]
@@ -102,7 +102,7 @@ function Navigation() {
             </li>
             <li>
               <a className={`
-          ${activeSection === 'skills' ? 'bg-[#1ABC9C] !text-gray-900' : 'text-gray-300 hover:text-[#1ABC9C]'}
+          ${activeSection === 'skills' ? 'bg-[#1ABC9C] !text-gray-900' : 'text-gray-200 hover:text-[#1ABC9C]'}
           focus:text-[#1ABC9C]
           focus:bg-gray-700/50
           active:bg-[#1ABC9C]
@@ -123,7 +123,7 @@ function Navigation() {
             <li>
               <a
                 className={`
-        ${activeSection === 'experience' ? 'bg-[#1ABC9C] !text-gray-900' : 'text-gray-300 hover:text-[#1ABC9C]'}
+        ${activeSection === 'experience' ? 'bg-[#1ABC9C] !text-gray-900' : 'text-gray-200 hover:text-[#1ABC9C]'}
         focus:text-[#1ABC9C]
         focus:bg-gray-700/50
         active:bg-[#1ABC9C]
@@ -144,7 +144,7 @@ function Navigation() {
             </li>
             <li>
               <a className={`
-          ${activeSection === 'projects' ? 'bg-[#1ABC9C] !text-gray-900' : 'text-gray-300 hover:text-[#1ABC9C]'}
+          ${activeSection === 'projects' ? 'bg-[#1ABC9C] !text-gray-900' : 'text-gray-200 hover:text-[#1ABC9C]'}
           focus:text-[#1ABC9C]
           focus:bg-gray-700/50
           active:bg-[#1ABC9C]
