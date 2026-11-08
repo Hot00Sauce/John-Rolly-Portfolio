@@ -15,8 +15,8 @@ function App() {
           absolute
           top-0
           w-full
-           h-[26rem]
-           sm:h-[29rem]
+          h-[36rem]
+          sm:h-[38rem]
            md:h-[31rem]
           lg:h-[662px]
           xl:h-[780px]

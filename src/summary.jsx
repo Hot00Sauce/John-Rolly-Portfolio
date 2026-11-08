@@ -2,7 +2,7 @@ function Summary() {
   return (
     <div id="summary" className="summary 
   md:pl-100 lg:pl-140 xl:pl-155
-  pt-110 sm:pt-10 md:pt-35 lg:pt-60 xl:pt-70
+  pt-[37rem] sm:pt-[39rem] md:pt-35 lg:pt-60 xl:pt-70
   px-4 sm:px-6 md:px-8 pb-0 sm:pb-10 md:pb-12 lg:pb-0 flex justify-center items-center
   relative
 ">
